@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; }
+
+/* TWO COLUMN CODE */
+#page-wrapX { width: 80%; margin: 60px auto; }
+#page-wrapX > div { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+#doug-neiner-two { 
+            overflow: hidden;
+            background-color: #ccc; 
+            background-image: -moz-linear-gradient(
+                left, 
+                #eee, 
+                #eee 50%,
+                #ccc 50%,
+                #eee 100%
+            );
+            
+            background-image: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                
+                color-stop(0, #eee),
+                color-stop(50%, #eee),
+                color-stop(50%, #ccc),
+                color-stop(100%, #eee)
+            );   
+        
+        }
+        #doug-neiner-two .col {
+            width: 46%; float: left; padding: 2%;
+        }
+        #doug-neiner-two .col:nth-child(1) { margin-left:  50%; width: 46%; } /* PRIMARY */
+        #doug-neiner-two .col:nth-child(2) { margin-left: -100%; }
+
+
+
+
+/* THREE COLUMN CODE */
+
+#page-wrap { width: 80%; margin: 60px auto; }
+#page-wrap > div { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+#doug-neiner-three { 
+            overflow: hidden;
+            background-color: #ccc; 
+            background-image: -moz-linear-gradient(
+                left, 
+                #eee, 
+                #eee 33%,
+                #ccc 33%,
+                #ccc 66%,
+                #eee 66%,
+                #eee 100%
+            );
+            
+            background-image: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                
+                color-stop(0, #eee),
+                color-stop(33%, #eee),
+                color-stop(33%, #ccc),
+                color-stop(66%, #ccc),
+                color-stop(66%, #eee),
+                color-stop(100%, #eee)
+            );   
+        
+        }
+        #doug-neiner-three .col {
+            width: 28%; float: left; padding: 2%;
+        }
+        #doug-neiner-three .col:nth-child(1) { margin-left:  33%; width: 29%; } /* PRIMARY */
+        #doug-neiner-three .col:nth-child(2) { margin-left: -66%; }
+
+/* FOUR COLUMN CODE */
+#page-wrap2 { width: 80%; margin: 60px auto; }
+#page-wrap2 > div { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+.four-columns { 
+    background-image: -webkit-gradient(
+        linear, left top,
+        right top,
+        color-stop(0, #eee),
+        color-stop(25%, #eee),
+        color-stop(25%, #ccc),
+        color-stop(50%, #ccc),
+        color-stop(50%, #eee),
+        color-stop(75%, #eee),
+        color-stop(75%, #ccc),
+        color-stop(100%, #eee)
+        );      
+    background-image: -webkit-linear-gradient(left, #eee, #eee 25%,#ccc 25%,#ccc 50%,#eee 50%,#eee 75%,#ccc 75%, #eee 100%);
+    background-image: -moz-linear-gradient(left, #eee, #eee 25%,#ccc 25%,#ccc 50%,#eee 50%,#eee 75%,#ccc 75%, #eee 100%);
+    background-image: -ms-linear-gradient(left, #eee, #eee 25%,#ccc 25%,#ccc 50%,#eee 50%,#eee 75%,#ccc 75%, #eee 100%);
+    background-image: -o-linear-gradient(left, #eee, #eee 25%,#ccc 25%,#ccc 50%,#eee 50%,#eee 75%,#ccc 75%, #eee 100%);
+    }
+    /* THIS IS WHERE YOU DO THE MATH TO GET YOUR COLUMNS TO WORK */
+    .four-columns .col { width: 21%; float: left; padding: 2%; }
+
+/* FIVE COLUMN CODE */
+#page-wrap3 { width: 80%; margin: 60px auto; }
+#page-wrap3 > div { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+.five-columns { 
+    background-image: -webkit-gradient(
+        linear, left top,
+        right top,
+        color-stop(0, #eee),
+        color-stop(20%, #eee),
+        color-stop(20%, #ccc),
+        color-stop(40%, #ccc),
+        color-stop(40%, #eee),
+        color-stop(60%, #eee),
+        color-stop(60%, #ccc),
+        color-stop(80%, #ccc),
+        color-stop(80%, #eee),
+        color-stop(100%, #eee)
+    );      
+    background-image: -webkit-linear-gradient(left, #eee, #eee 20%,#ccc 20%,#ccc 40%,#eee 40%,#eee 60%,#ccc 60%,#ccc 80%,#eee 80%,#eee 100%);
+    background-image: -moz-linear-gradient(left, #eee, #eee 20%,#ccc 20%,#ccc 40%,#eee 40%,#eee 60%,#ccc 60%,#ccc 80%,#eee 80%,#eee 100%);
+    background-image: -ms-linear-gradient(left, #eee, #eee 20%,#ccc 20%,#ccc 40%,#eee 40%,#eee 60%,#ccc 60%,#ccc 80%,#eee 80%,#eee 100%);
+    background-image: -o-linear-gradient(left, #eee, #eee 20%,#ccc 20%,#ccc 40%,#eee 40%,#eee 60%,#ccc 60%,#ccc 80%,#eee 80%,#eee 100%);
+}
+    .five-columns .col {
+            width: 16%; float: left; padding: 2%;
+    }
+
+
+
+
+
+
+    .border {border: 1px solid #000;}
+            
+</style>
+</head>
+<body>
+
+<!-- two columns begin here -->
+<div id="page-wrapX" class="border">    
+    <div id="doug-neiner-two" class="group">
+        <div class="col"><h3>I am listed first in source order.</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>  
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+    </div>
+</div>
+
+<br style="margin-top:30px;">
+
+
+<!-- three columns begin here -->
+<div id="page-wrap" class="border">    
+    <div id="doug-neiner-three" class="group">
+        <div class="col"><h3>I am listed first in source order.</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>  
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+    </div>
+</div>
+
+<br style="margin-top:30px;">
+
+<!-- four columns begin here -->
+<div id="page-wrap2" class="border">        
+    <div class="four-columns group">
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+    </div>
+</div>
+
+<br style="margin-top:30px;">
+
+<!-- five columns begin here -->
+<div id="page-wrap3" class="border">        
+    <div class="five-columns group">
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+        <div class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+    </div>
+</div>
+
+
+</body>
+</html>

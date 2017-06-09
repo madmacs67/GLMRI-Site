@@ -1,0 +1,19 @@
+Hi Dan,
+
+Attached is the zipped site.
+
+I tried fixing some of the areas to make it responsive, but still need your help with the following:
+
+- Resizing the font size (either .5em or .75em) for the h2s for mobile
+- Columns (making sure they stay in the 3 or 4 column format for web & tablet, but as one column for mobile)
+- Keeping the nav bar (logo + pages) centered for tablet and mobile (Instead of left aligned)
+- Making sure site doesn't scroll outside the mobile window (it's like the site shifts b/c of the nav bar)
+- Centering the logo within the footer
+- I'm gonna be out of town till Sunday, so i'll be offline till then.
+
+Thank you in advance!
+
+
+a lot of the divs have inline styles so the style sheet won't override those styles.
+
+h2 style on home page. "Choosing a diagnostic..."

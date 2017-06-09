@@ -1,0 +1,24 @@
+Dan Notes
+
+to have images, specifically HERO SVGs, not have scroll bars in IE, you could use a style called "overflow" with a value of "visible"
+
+
+Change this 
+		<meta name="viewport" content="width=device-width, user-scalable=true;">
+to
+		<meta name="viewport" content="width=device-width">
+
+
+hero size scaling across different page widths:
+	#hero > object {
+		height:55%; /* change this value */
+	}
+
+
+	fonts in columns
+	make the size a percentage:     font-size: 85%;
+
+
+	leading and kerning
+    line-height: 62px;
+    letter-spacing: 0.01em;

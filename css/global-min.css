@@ -1,0 +1,531 @@
+/* i just have this here for testing purposes, please keep */
+.border {
+  border: 1px solid #000; }
+
+/* globally it seems that all white blocks with H2's have this blue text */
+.block-white > h2 {
+  color: #29abe1; }
+
+/*
+
+the columns are having a hard time sizing because their height and width is being determined by "child" elements... the H2, H3, etc. those children should have their own properties independent of the column.
+
+so, off of the top of my head... i think that where you have 2 columns you need a class set to "block" called .2column. then we would have classes on those columns... .2colCol1, .2colCol2 
+
+*/
+.2column {
+  background-color: orange; }
+
+.2colCol1 {
+  float: left;
+  width: 50%;
+  background-color: #64D8AA; }
+
+/*
+    width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	height: 200px;
+    left: 0px;
+    text-align: center;
+	background-color: #64D8AA;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+*/
+.2colCol2 {
+  float: left;
+  width: 50%; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+h2 {
+  font-size: 1em;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75em; }
+
+h3 {
+  font-size: 3.5em;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1em; }
+
+header {
+  position: fixed;
+  height: 110px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 1000px; }
+
+div.keeptogether {
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+.three-col {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5em 3em; }
+
+.four-col {
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5em 3em; }
+
+.four-col-about {
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center;
+  background: #3EBBCD;
+  color: white; }
+
+.color-home {
+  background: #29abe1;
+  height: 165px;
+  padding-right: 20px;
+  max-width: 100%; }
+
+.color-about {
+  background: #3EBBCD;
+  height: 165px;
+  padding-right: 20px;
+  max-width: 100%; }
+
+.color-services {
+  background: #53CBB9;
+  height: 165px;
+  padding-right: 20px;
+  max-width: 100%; }
+
+.color-contact {
+  background: #64D8AA;
+  height: 165px;
+  padding-right: 20px;
+  max-width: 100%; }
+
+#logo {
+  background: url(../imgs/GLMRI-Logo.png) no-repeat top left;
+  height: 110px;
+  width: 609px;
+  float: left;
+  margin: 5px; }
+
+nav li {
+  float: left;
+  width: auto;
+  font-family: 'Open Sans', sans-serif; }
+
+nav li a {
+  position: relative;
+  display: inline-block;
+  margin: 55px 15px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25em; }
+
+nav ul {
+  float: right;
+  width: auto; }
+
+/* NAV EFFECT */
+.cl-effect-4 a {
+  padding: 0 0 10px; }
+
+.cl-effect-4 a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px); }
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+  height: 5px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px); }
+
+/* END NAV EFFECT */
+#hero {
+  background: #29abe1;
+  text-align: center;
+  overflow: visible;
+  height: 275px;
+  padding-top: 175px;
+  background-size: cover; }
+
+#hero-about {
+  background: #3EBBCD;
+  text-align: center;
+  overflow: visible;
+  height: 275px;
+  padding-top: 175px;
+  background-size: cover; }
+
+#hero-services {
+  background: #53CBB9;
+  text-align: center;
+  overflow: visible;
+  height: 275px;
+  padding-top: 175px;
+  background-size: cover; }
+
+#hero-contact {
+  background: #64D8AA;
+  text-align: center;
+  overflow: visible;
+  height: 275px;
+  padding-top: 175px;
+  background-size: cover; }
+
+#hero img {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 50px; }
+
+#hero h2 {
+  font-size: 4em;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 75px; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+
+#main-content {
+  padding-top: 8em;
+  padding-left: 5em;
+  padding-right: 5em; }
+
+.block {
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center;
+  background: #29abe1;
+  color: white; }
+
+.block-white {
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center; }
+
+.block-img1 {
+  /*
+	background: url(../imgs/img-1.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+*/
+  /* 
+    setting height to 600px locks it into a size. a percentage would be better and scale smarter    
+    */
+  /*	height: 600px;*/ }
+
+body > section.block-img1 > img {
+  width: 100%;
+  height: 100%; }
+
+.block-img2 {
+  background: url(../imgs/img-2.jpg);
+  background-size: cover;
+  height: 600px;
+  max-width: 100%; }
+
+.block-img3 {
+  background: url(../imgs/img-3.jpg);
+  background-size: cover;
+  height: 600px;
+  max-width: 100%; }
+
+.block-img5 {
+  background: url(../imgs/img-5.jpg);
+  background-size: cover;
+  height: 600px;
+  max-width: 100%; }
+
+.block-img6 {
+  background: url(../imgs/img-6.jpg);
+  background-size: cover;
+  height: 600px;
+  max-width: 100%; }
+
+.block-img7 {
+  background: url(../imgs/img-7.jpg);
+  background-size: cover;
+  height: 600px;
+  max-width: 100%; }
+
+.block-img8 {
+  background: url(../imgs/img-8.jpg);
+  background-size: cover;
+  height: 600px;
+  max-width: 100%; }
+
+.block-text {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75em; }
+
+.block-about {
+  margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+  background: #3EBBCD;
+  color: white; }
+
+.block-services {
+  margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+  background: #53CBB9;
+  color: white; }
+
+.block-contact {
+  margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+  background: #64D8AA;
+  color: white; }
+
+/* MOVED FROM BOTTOM I LEFT AT BOTTOM BUT COMMENTED OUT */
+#column1 h3 {
+  width: 50%;
+  float: left;
+  margin: 0 auto;
+  /*
+	padding-top: 150px;
+	padding-bottom: 50px;
+	height: 200px;
+*/
+  left: 0px;
+  text-align: center;
+  background-color: #64D8AA;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out; }
+
+.map {
+  height: 450px; }
+
+.overlay {
+  background: transparent;
+  position: relative;
+  height: 450px;
+  top: 450px;
+  margin-top: -450px; }
+
+#2colCol1 h3:hover, #2colCol2 h3:hover {
+  background: #29abe1; }
+
+/*
+#column1 h3:hover, #column2 h3:hover {
+	background: #29abe1;	 
+}
+*/
+/* ANYTHING AFTER YOUR MEDIA QUERY WILL OVERWRITE ANYTHING IN THAT MEDIA QUERY */
+/*
+#column1 h3 {
+    width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	height: 200px;
+    left: 0px;
+    text-align: center;
+	background-color: #64D8AA;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}        
+*/
+#column2 h3 {
+  width: 50%;
+  float: right;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: 200px;
+  right: 0px;
+  text-align: center;
+  background-color: #3EBBCD;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out; }
+
+#footer {
+  background: #fff;
+  padding: 25px 0;
+  overflow: hidden;
+  clear: both; }
+
+#footer li {
+  padding: 20px;
+  text-align: center; }
+
+#footer ul {
+  width: 520px;
+  margin: 0 auto; }
+
+#footer h2 {
+  color: #29abe1; }
+
+body > section.block > h2 {
+  padding: 0 2em;
+  margin-left: -1em;
+  font-size: 1.75em !important; }
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  body > header > section > nav > nav {
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 125px; }
+  #main-content {
+    padding: 0px; }
+  #main-content > h3 {
+    margin-top: 0px;
+    padding: 2em 0em;
+    font-size: 4em;
+    line-height: 1.25em; }
+  .container {
+    padding-bottom: 0px; }
+  #hero > object {
+    height: 80%;
+    margin-top: 35px; }
+  #hero-about > object {
+    height: 80%;
+    margin-top: 35px; }
+  #hero-services > object {
+    height: 80%;
+    margin-top: 35px; }
+  #hero-contact > object {
+    height: 80%;
+    margin-top: 35px; }
+  /* All H2's font size global for 1000px */
+  h2 {
+    font-size: 1.25em; }
+  /* closing up the gap above and below block elements when screen shrinks */
+  /*    .block {padding:3em 2em;}*/
+  .block, .block-white {
+    padding: 2.5em 0em;
+    width: 100%;
+    height: 100%; }
+  body > section.block > h2,
+  body > section.block-white > h2 {
+    padding: 0 5em;
+    font-size: 1.75em !important;
+    margin-top: 0px;
+    margin-left: -1.5em; } }
+
+/* Mobile */
+@media only screen and (max-width: 580px) {
+  body > header > section > nav > nav {
+    font-size: 70%;
+    margin: 30px 35px; }
+  /* 
+    setting this to a fixed height can
+    make long text run over and short 
+    text look too airy    
+    */
+  /*
+	body > section {
+	height: 100px;
+	margin: 0 auto;
+	}
+*/
+  body > section > h3 {
+    font-size: 1.75em;
+    margin: 30px 35px; }
+  div > section > h3 {
+    font-size: 1.75em; }
+  #column1 h3 {
+    font-size: 1.5em; }
+  #column2 h3 {
+    font-size: 1.5em; }
+  #main-content {
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-right: 5em; }
+  #logo {
+    background-size: 55%;
+    /* 586 x 110 */ }
+  #hero > object {
+    height: 45%; }
+  #hero-about > object {
+    height: 50%; }
+  #hero-services > object {
+    height: 60%; }
+  #hero-contact > object {
+    height: 60%; }
+  .block-about {
+    margin: 0 auto;
+    padding: 2em 3em; }
+  .block-services {
+    margin: 0 auto;
+    padding: 2em 3em; }
+  .block-contact {
+    margin: 0 auto;
+    padding: 2em 2em; }
+  /* All H2's font size global for 1000px */
+  /* h2 {font-size:.8em;} */
+  /* closing up the gap above and below block elements when screen shrinks */
+  .block, .block-white {
+    padding: 2.5em 0em;
+    width: 100%;
+    height: 100%; }
+  body > section.block > h2,
+  body > section.block-white > h2 {
+    padding: 0 5em;
+    font-size: .8em !important;
+    margin-top: 0px;
+    margin-left: -1.5em; }
+  #column1 > h3 {
+    font-size: 1em !important; } }
+
+/***********************************************************************************/
+/*                                                                                 */
+/*    ANYTHING FROM HERE ON DOWN OVERWRITES ANYTHING YOU PUT INTO A MEDIA QUERY    */
+/*                                                                                 */
+/***********************************************************************************/
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
